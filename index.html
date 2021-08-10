@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Please Enter Your Details For Our Dating Website!</h1>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Your Face</legend>
+                <label for="user-image">Your Image:</label>
+                <input type="file" name="image" id="user-image" /><br />
+                Image Preview:
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Contact Details</legend>
+                <label for="user-name">Name:</label>
+                <input type="text" id="user-name" name="userName" required /><br />
+                <label for="">Gender:
+                    <input type="radio" id="male" name="gender" />
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" />
+                    <label for="female">Female</label>
+                    <input type="radio" id="others" name="gender" />
+                    <label for="others">Others</label> </label><br />
+                <label for="user-age">Age:</label>
+                <input type="number" name="age" id="user-age" min="18" max="99" /><br />
+                <label for="user-dob">Date of Birth:</label>
+                <input type="date" name="DOB" id="user-dob" /><br />
+                <label for="user-favcolor">Favorite Color:</label>
+                <input type="color" name="favColor" id="user-favcolor" /><br />
+                <label for="user-country">Country:</label>
+                <select name="Country" id="user-country">
+                    <optgroup>
+                        <option value="countries" selected disabled>Select Country</option>
+                        <option value="Uganda">Uganda</option>
+                        <option value="Kenya">Kenya</option>
+                        <option value="Tanzania">Tanzania</option>
+                        <option value="Burundi">Burundi</option>
+                        <option value="Rwanda">Rwanda</option>
+                        <option value="South Sudan">South Sudan</option>
+                        <option value="Others">Others</option>
+                    </optgroup>
+                    <optgroup> </optgroup>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Indicators</legend>
+                <label for="height">Height: <span class="left-ind">Short</span><input type="range" name="height"
+                        id="height" /><span class="right-ind">Tall</span> </label><br />
+                <label for="salary">Salary: <span class="left-ind">Poor</span><input type="range" name="salary"
+                        id="salary" /><span class="right-ind">Rich</span>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Contact Information</legend>
+                <label for="email">Email:</label>
+                <input type="email" name="emailAddress" id="email" /><br />
+                <label for="phone-number">Phone Number:</label>
+                <input type="number" name="phoneNumber" id="phone-number" /><br />
+                <label for="address">Address:</label>
+                <input type="text" name="address" id="address" /><br />
+                <label for="">Mehod to Contact You:</label>
+                <input type="checkbox" name="email" id="chek-email" />
+                <label for="chek-email">Email</label>
+                <input type="checkbox" name="whatsapp" id="whatsapp" />
+                <label for="whatsapp">Whatsapp</label>
+                <input type="checkbox" name="apps" id="apps" />
+                <label for="apps">In-app</label>
+            </fieldset>
+        </form>
+        <br />
+
+        <input type="submit" name="submit" id="submit" value="Submit" />
+    </div>
+</body>
+
+</html>
